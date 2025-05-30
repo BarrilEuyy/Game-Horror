@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; // Jangan lupa tambahkan ini untuk komponen UI
+using UnityEngine.UI;
 
 public class MenuButton : MonoBehaviour
 {
@@ -8,10 +8,8 @@ public class MenuButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Dapatkan komponen Button
         button = GetComponent<Button>();
         
-        // Tambahkan listener untuk onClick
         button.onClick.AddListener(() => {
             Debug.Log("klik");
              UnityEngine.SceneManagement.SceneManager.LoadScene(1);
