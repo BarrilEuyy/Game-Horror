@@ -27,13 +27,14 @@ public class PlayerInteraction : MonoBehaviour
         // Raycast hanya ke layer "Interactable"
         if (Physics.Raycast(ray, out hit, interactDistance, interactableLayer))
         {
-            InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
+            IInteractable interactable = hit.collider.GetComponent<IInteractable>() 
+    ?? hit.collider.GetComponentInParent<IInteractable>();
 
             if (interactable != null)
             {
                 interactButton.gameObject.SetActive(true);
                 interactButton.onClick.RemoveAllListeners();
-                interactButton.onClick.AddListener(() => HandleInteraction(interactable));
+                interactButton.onClick.AddListener(() => interactable.Interact());
             }
         }
         else
@@ -42,17 +43,5 @@ public class PlayerInteraction : MonoBehaviour
             interactButton.gameObject.SetActive(false);
         }
     }
-    void HandleInteraction(InteractableObject ObjectName)
-
-    {
-        // Debug.Log(ObjectName);
-        switch (ObjectName.name)
-        {
-            case "computer":
-                ObjectName.InteractComputer();
-                break;
-
-
-        }
-    }
+    
 }

@@ -12,7 +12,7 @@ public class MenuButton : MonoBehaviour
         
         button.onClick.AddListener(() => {
             Debug.Log("klik");
-             UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }); 
     }
 
