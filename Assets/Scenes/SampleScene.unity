@@ -159,11 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  m_AnchoredPosition: {x: 587.31, y: -20.402}
-=======
   m_AnchoredPosition: {x: 500, y: -20.402}
->>>>>>> origin/BarrilDev
   m_SizeDelta: {x: 214.5757, y: 149.342}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251123020
@@ -703,12 +699,6 @@ Transform:
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.49, z: 0}
-<<<<<<< HEAD
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1623478153}
-=======
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -745,7 +735,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 963194228}
->>>>>>> origin/BarrilDev
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -1298,13 +1287,7 @@ GameObject:
   - component: {fileID: 1623478151}
   - component: {fileID: 1623478155}
   - component: {fileID: 1623478156}
-<<<<<<< HEAD
-  - component: {fileID: 1623478158}
   - component: {fileID: 1623478157}
-  - component: {fileID: 1623478159}
-=======
-  - component: {fileID: 1623478157}
->>>>>>> origin/BarrilDev
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1426,17 +1409,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1623478149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_MaxRayIntersections: 0
---- !u!20 &1623478158
-Camera:
-=======
   m_Script: {fileID: 11500000, guid: 6926fd6cabe0cad4299a6360ce1ff2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1452,63 +1424,10 @@ Camera:
   playerCam: {fileID: 963194227}
 --- !u!1 &1715443175
 GameObject:
->>>>>>> origin/BarrilDev
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1623478149}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!65 &1623478159
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623478149}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715443176}
@@ -1583,7 +1502,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715443175}
   m_CullTransparentMesh: 1
->>>>>>> origin/BarrilDev
 --- !u!224 &1853825113 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224977699150327530, guid: e0815e227ed46e445b99930271e8942c, type: 3}
@@ -1601,12 +1519,8 @@ GameObject:
   - component: {fileID: 1881842737}
   - component: {fileID: 1881842736}
   - component: {fileID: 1881842735}
-<<<<<<< HEAD
-  - component: {fileID: 1881842739}
-=======
   - component: {fileID: 1881842734}
   - component: {fileID: 1881842740}
->>>>>>> origin/BarrilDev
   m_Layer: 3
   m_Name: computer
   m_TagString: Interactable
@@ -1614,8 +1528,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
-=======
 --- !u!114 &1881842734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1628,7 +1540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0edf1c9f32ce2c4e810cd9b8104c095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> origin/BarrilDev
 --- !u!65 &1881842735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1700,22 +1611,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881842733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: -0.4, z: -6.13}
-=======
   m_LocalPosition: {x: 2.12, y: -1.58, z: -0.42}
->>>>>>> origin/BarrilDev
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &1881842739
-=======
 --- !u!114 &1881842740
->>>>>>> origin/BarrilDev
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1921,10 +1824,7 @@ RectTransform:
   - {fileID: 1853825113}
   - {fileID: 754466951}
   - {fileID: 251123019}
-<<<<<<< HEAD
-=======
   - {fileID: 1199285327}
->>>>>>> origin/BarrilDev
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1964,65 +1864,6 @@ Transform:
   m_Father: {fileID: 1623478153}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1001 &3710666679376654287
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3710666678003834001, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_Name
-      value: door
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3710666678003834031, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dfaea8ed61070814ca28fc6ee34dc624, type: 3}
-=======
 --- !u!4 &1162547538296639083
 Transform:
   m_ObjectHideFlags: 0
@@ -2472,4 +2313,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
->>>>>>> origin/BarrilDev
