@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
 
     public Transform groundCheck;
     public float groundDistance;
-    public LayerMask groundLayer;
+    public RaycastHit hitGround;
 
     public float jumpHeight;
 
@@ -29,7 +29,8 @@ public class Movement : MonoBehaviour
     {
         GetTouch();
 
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundLayer);
+        isGrounded = Physics.Raycast(groundCheck.position, Vector3.down, groundDistance);
+
 
         if (isGrounded && velocity.y < 0)
             velocity.y = -2f;
