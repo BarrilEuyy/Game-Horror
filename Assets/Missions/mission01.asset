@@ -16,5 +16,5 @@ MonoBehaviour:
   senderName: bastian
   body: 
   missionImage: {fileID: 0}
-  sceneName: 
+  sceneName: Scenes/MissionScene/Mission1
   unlocked: 1
