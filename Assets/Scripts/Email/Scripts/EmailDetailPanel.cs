@@ -6,7 +6,7 @@ public class EmailDetailPanel : MonoBehaviour
     public Text subjectText;
     // public Text bodyText;
     // public Image missionImage;
-    // // public Button startButton;
+    public Button startButton;
 
     private MissionData currentMission;
 
@@ -17,10 +17,10 @@ public class EmailDetailPanel : MonoBehaviour
         subjectText.text = mission.senderName;
         // bodyText.text = mission.body;
         // missionImage.sprite = mission.image;
-        // startButton.onClick.RemoveAllListeners();
-        // startButton.onClick.AddListener(() => {
-        //     StartMission(mission.sceneName);
-        // });
+        startButton.onClick.RemoveAllListeners();
+        startButton.onClick.AddListener(() => {
+            StartMission(mission.sceneName);
+        });
 
         gameObject.SetActive(true); // pastikan panel tampil
     }
