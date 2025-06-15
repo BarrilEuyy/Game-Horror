@@ -12,9 +12,7 @@ public class PlayerInteraction : MonoBehaviour
     public LayerMask interactableLayer;
 
     [Header("Item")]
-    public bool hasKey;
-    public Transform handTransform;
-    public GameObject item;
+    public Transform DropPos;
 
 
     public Camera playerCam;
@@ -39,32 +37,12 @@ public class PlayerInteraction : MonoBehaviour
         }
         else
         {
-            // currentTarget = null;
             interactButton.gameObject.SetActive(false);
         }
 
-        dropButton.gameObject.SetActive((item != null) ? true : false);
 
     }
 
-    public void UnpickItem()
-    {
-        if (item == null) return;
 
-
-        item.transform.SetParent(null);
-        item.transform.position = transform.position + transform.forward * 1.5f;
-
-        if (item.TryGetComponent<Rigidbody>(out var rb))
-        {
-            rb.isKinematic = false;
-            rb.AddForce(transform.forward * 2f, ForceMode.Impulse);
-        }
-
-        if (item != null && hasKey)
-            hasKey = false;
-
-        item = null;
-    }
 
 }

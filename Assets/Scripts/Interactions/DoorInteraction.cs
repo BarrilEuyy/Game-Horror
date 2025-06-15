@@ -1,61 +1,71 @@
+using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class DoorInteraction : MonoBehaviour, IInteractable
 {
-    public bool isLocked;
+    [Header("Door Settings")]
+    [SerializeField] private bool isLocked = true;
+    [SerializeField] private string requiredKeyName = "Key";
 
-    public Animation doorAnim;
-    public AnimationClip openAnim;
-    public AnimationClip closeAnim;
-
+    private Animator animator;
     private bool isOpen = false;
-    public float speed;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void Interact(GameObject interactor)
     {
         if (isLocked)
         {
-            PlayerInteraction player = interactor.GetComponent<PlayerInteraction>();
-            if (player != null && player.hasKey)
+            Item keyItem = InventoryManager.Instance.inventoryItems
+                .Find(item => item.itemName == requiredKeyName);
+
+            if (keyItem != null)
             {
-                UnlockDoor(player);
+                UnlockDoor(keyItem);
             }
             else
             {
                 Debug.Log("Pintu terkunci. Kamu butuh kunci.");
-                return;
             }
         }
         else
         {
-            ToogleDoor();
+            ToggleDoor();
         }
-
     }
 
-    void UnlockDoor(PlayerInteraction player)
+    private void UnlockDoor(Item keyItem)
+    {
+        isLocked = false;
+        InventoryManager.Instance.RemoveItem(keyItem);
+        Debug.Log("Pintu berhasil dibuka.");
+
+        OpenDoor();
+    }
+
+    private void ToggleDoor()
+    {
+        if (isOpen)
+            CloseDoor();
+        else
+            OpenDoor();
+    }
+
+    private void OpenDoor()
     {
         isOpen = true;
-        player.hasKey = false;
-        isLocked = false;
-        Destroy(player.item);
-        Debug.Log("Pintu terbuka!");
+        animator.SetBool("isOpen", true);
+        Debug.Log("Pintu dibuka.");
     }
 
-    void ToogleDoor()
+    private void CloseDoor()
     {
-        isOpen = !isOpen;
-        Debug.Log("Pintu " + (isOpen ? "dibuka" : "ditutup"));
-
-        Animator anim = GetComponent<Animator>() ?? GetComponentInChildren<Animator>();
-        anim.SetBool("isOpen", isOpen);
-
+        isOpen = false;
+        animator.SetBool("isOpen", false);
+        Debug.Log("Pintu ditutup.");
     }
-
-    // void RotateDoor()
-    // {
-    //     // Contoh animasi rotasi pintu
-    //     float targetAngle = isOpen ? Mathf.SmoothDampAngle(transform.eulerAngles.y, -90f, ref r, 0.2f) : 0f;
-    //     transform.localRotation = Quaternion.Euler(0, targetAngle, 0);
-    // }
 }
