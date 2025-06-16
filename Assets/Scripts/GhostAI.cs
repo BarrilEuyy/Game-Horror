@@ -27,8 +27,7 @@ public class GhostAI : MonoBehaviour
     {
         Debug.LogWarning("Player not found! Pastikan tag 'Player' sudah dipasang.");
     }
-    }
-
+    }   
     void Update()
     {
         float distance = Vector3.Distance(transform.position, player.position);
