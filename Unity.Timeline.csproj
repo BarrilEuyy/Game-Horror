@@ -72,9 +72,9 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\TimelineAsset_CreateRemove.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Utilities\IPropertyCollector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Attributes\TimelineHelpURLAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Audio\AudioTrack.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\TimelineAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Playables\DirectorControlPlayable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Audio\AudioTrack.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Utilities\AnimationPreviewUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Events\INotificationOptionProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Runtime\Utilities\TimelineCreateUtilities.cs" />
@@ -466,6 +466,10 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>E:\Programs\Unity\Unity 2021.3.45f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">

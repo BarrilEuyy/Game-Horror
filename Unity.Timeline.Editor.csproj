@@ -267,13 +267,13 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Manipulators\EditMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\Snapping\ISnappable.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\TimelineDataSource.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Animation\AnimationOffsetMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\CustomEditors\MarkerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Animation\AnimationOffsetMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Utilities\ClipModifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Signals\SignalReceiverHeader.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Audio\AudioClipPropertiesDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\OverlayDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\CustomEditors\ClipEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\OverlayDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\TimelineEditorWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\Snapping\IAttractable.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\ItemGui\ISelectable.cs" />
@@ -681,6 +681,10 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>E:\Programs\Unity\Unity 2021.3.45f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
