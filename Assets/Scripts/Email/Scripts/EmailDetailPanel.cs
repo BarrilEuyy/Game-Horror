@@ -3,18 +3,21 @@ using UnityEngine.UI;
 
 public class EmailDetailPanel : MonoBehaviour
 {
-    public Text subjectText;
+    public Text senderEmail;
+    public Text senderName;
     // public Text bodyText;
     // public Image missionImage;
     public Button startButton;
+
 
     private MissionData currentMission;
 
     public void ShowDetail(MissionData mission)
     {
         currentMission = mission;
-        Debug.Log(mission.senderName);
-        subjectText.text = mission.senderName;
+        Debug.Log(mission.senderEmail);
+        senderEmail.text = mission.senderEmail;
+        senderName.text = mission.senderName;
         // bodyText.text = mission.body;
         // missionImage.sprite = mission.image;
         startButton.onClick.RemoveAllListeners();

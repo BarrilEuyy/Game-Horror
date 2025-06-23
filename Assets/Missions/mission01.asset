@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2919b38d10c3b4493f0e046ee92fbe, type: 3}
   m_Name: mission01
   m_EditorClassIdentifier: 
-  subject: anton
-  senderName: bastian
-  body: 
+  subject: Anton
+  senderEmail: risa@gmail.com
+  senderName: risarisa
+  body: halo anton
   missionImage: {fileID: 0}
-  sceneName: Scenes/MissionScene/Mission1
-  unlocked: 1
+  sceneName: 
+  unlocked: 0
