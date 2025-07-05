@@ -11,5 +11,6 @@ public class Item
     public GameObject inspectItem;
     public Vector3 worldScale;
     public Vector3 inspectScale;
-    public Button actionButton;
+    public GameObject actionButton;
+    public bool isSelect;
 }

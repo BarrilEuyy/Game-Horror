@@ -121,7 +121,7 @@ MonoBehaviour:
     inspectItem: {fileID: 1407712022253591374}
     worldScale: {x: 0, y: 0, z: 0}
     inspectScale: {x: 0, y: 0, z: 0}
-    actionButton: {fileID: 2648990572789825045, guid: 848bd1b845e630747ae201974aed85c2, type: 3}
+    actionButton: {fileID: 2648990572789825067, guid: 848bd1b845e630747ae201974aed85c2, type: 3}
   lightInWorld: {fileID: 4690142689030827873}
 --- !u!1 &1947380964228983195
 GameObject:
@@ -271,7 +271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4166520590654014618
 Transform:
   m_ObjectHideFlags: 0

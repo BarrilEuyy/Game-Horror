@@ -13,6 +13,7 @@ public class FlashlightInteraction : MonoBehaviour, IInteractable
     Light playerLight;
     private Button btnActive;
     private GameObject playerCam;
+    public GameObject btn;
 
     public void Interact(GameObject interactor)
     {
@@ -20,12 +21,13 @@ public class FlashlightInteraction : MonoBehaviour, IInteractable
         InventoryManager.Instance.AddItem(itemData);
         playerCam = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>().gameObject;
 
-        if(playerLight == null)
-            playerLight = playerCam.GetComponentInChildren<Light>();
-
+        if (playerLight == null)
+            playerLight = playerCam.transform.Find("Light").GetComponent<Light>();
         // Buat tombol aksi
         if (btnActive == null)
-            btnActive = Instantiate(itemData.actionButton, InventoryManager.Instance.actionButtonPos);
+            btn = Instantiate(itemData.actionButton, InventoryManager.Instance.actionButtonPos);
+
+        btnActive = btn.GetComponent<Button>();
         btnActive.onClick.RemoveAllListeners();
         btnActive.onClick.AddListener(() =>
         {
@@ -33,8 +35,6 @@ public class FlashlightInteraction : MonoBehaviour, IInteractable
             lightInWorld.SetActive(!state);
             playerLight.gameObject.SetActive(!state);
         });
-        btnActive.gameObject.SetActive(false);
-        itemData.actionButton = btnActive;
     }
 
     void Update()
@@ -42,17 +42,11 @@ public class FlashlightInteraction : MonoBehaviour, IInteractable
 
         if (playerLight != null)
         {
-            if (!InventoryManager.Instance.inventoryItems.Contains(item: itemData))
-            {
-                playerLight.intensity = 0;
-                btnActive.gameObject.SetActive(false);
-            }
+            if (InventoryManager.Instance.inventoryItems.Contains(item: itemData))
+                btn.SetActive(true);
             else
-            {
-
-                playerLight.intensity = 1;
-                btnActive.gameObject.SetActive(true);
-            }
+                Destroy(btn);
         }
+
     }
 }

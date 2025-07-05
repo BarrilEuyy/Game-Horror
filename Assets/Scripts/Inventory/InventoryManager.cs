@@ -18,6 +18,7 @@ public class InventoryManager : MonoBehaviour
     public float targetSizeUI;
     public Button dropItemButton;
     public Transform actionButtonPos;
+    public Item itemSelect;
 
     private void Awake()
     {
@@ -64,20 +65,9 @@ public class InventoryManager : MonoBehaviour
 
     void OnItemSelected(Item item, GameObject itemUI)
     {
-
         foreach (Transform child in actionButtonPos)
         {
-            if (item.actionButton != null)
-            {
-                item.actionButton.gameObject.SetActive(true);
-
-                if (child.gameObject.activeSelf != item.actionButton.gameObject)
-                    child.gameObject.SetActive(false);
-            }
-            // else
-            // {
-            //     child.gameObject.SetActive(false);
-            // }
+            child.gameObject.SetActive(false);
         }
 
         dropItemButton.gameObject.SetActive(true);
