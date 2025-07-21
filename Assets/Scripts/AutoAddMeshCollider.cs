@@ -10,6 +10,7 @@ public class AutoAddMeshCollider : MonoBehaviour
             if (go.GetComponent<Collider>() == null)
             {
                 go.AddComponent<MeshCollider>();
+                go.GetComponent<MeshCollider>().convex = true;
             }
         }
     }

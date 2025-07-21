@@ -6,8 +6,11 @@ public class GhostAI : MonoBehaviour
     public GameObject ghostPrefab;
     public Transform player;
     public float appearDuration = 2f;
+    public float appearDurationWithSalt = .5f;
     public float interval = 5f;
+    public float intervalWithSalt = 8f;
     public float distanceInFront = 3f;
+    public bool saltIsTaken = false;
 
     private GameObject ghostInstance;
     private Renderer ghostRenderer;
@@ -36,7 +39,7 @@ public class GhostAI : MonoBehaviour
 
             Debug.Log("👻 Ghost muncul");
 
-            yield return new WaitForSeconds(appearDuration);
+            yield return new WaitForSeconds(saltIsTaken ? appearDurationWithSalt : appearDuration);
 
             // Sembunyikan ghost
             ghostRenderer.enabled = false;
@@ -44,7 +47,7 @@ public class GhostAI : MonoBehaviour
 
             Debug.Log("💨 Ghost hilang");
 
-            yield return new WaitForSeconds(interval);
+            yield return new WaitForSeconds(saltIsTaken ? intervalWithSalt : interval);
         }
     }
 }

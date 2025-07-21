@@ -34,7 +34,5 @@ public class BookInteraction : MonoBehaviour, IInteractable
             buttonUI.SetActive(true);
         else
             Destroy(buttonUI);
-
-
     }
 }
